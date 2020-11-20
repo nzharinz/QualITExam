@@ -1,0 +1,7 @@
+/target/
+/reports/
+.idea/
+.settings/
+*.iml
+*.log
+/test-output/
