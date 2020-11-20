@@ -1,0 +1,21 @@
+Chromedriver attached to the project was not running as expected,
+hence I had to localise the path.
+
+After I got the code running on Chrome driver, I found that the 
+username/password are not working, so I wanted to add a test case for 
+checking the results page instead.
+
+
+Recommendations:
+1.
+I would prefer to add code to kill chromedriver from task manager with the following code
+
+Process[] chromeDriverProcesses =  Process.GetProcessesByName("chromedriver");
+
+foreach(var chromeDriverProcess in chromeDriverProcesses)
+{
+     chromeDriverProcess.Kill();
+}
+
+2. Assertions can be added to test all the available eliments on the landing page & homepage
+3. Add more details in comments so that it's easier for the rest of the team members for maintenance
